@@ -4,8 +4,6 @@
 const prevButton = document.getElementById('prev');
 const nextButton = document.getElementById('next');
 
-// I get the images from the DOM
-const images = document.querySelectorAll('#carousel img');
 
 // I get the gallery from the DOM
 const gallery = document.querySelector('.gallery');
@@ -29,15 +27,18 @@ gallery.innerHTML = imageElements;
 let currentIndex = 0;
 console.log (currentIndex);
 
+// I get the images from the DOM
+const images = document.querySelectorAll('#carousel img');
+
 // setting up the first image as active 
 images[currentIndex].classList.add('active');
-console.log ('immagini');
+console.log (images);
 // ! Reasoning logic
 
 // i set next to listen
 nextButton.addEventListener('click', function() {
     // if at last image i stop the function
-    if (!currentIndex) return;
+    if (currentIndex ===  images.lenght - 1) return;
     
     // I remove the active class from the image that corresponds to currentIndex
     images[currentIndex].classList.remove('active');
