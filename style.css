@@ -4,3 +4,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/** Main CSS */
+
+#carousel {
+    height: 300px;
+    width: 700px;
+    margin: 30px auto;
+}
+#carousel .gallery {
+    height: 100%;
+}
+#carousel img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: none;
+}
+#carousel img.active {
+    display: block;
+}
