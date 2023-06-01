@@ -28,3 +28,12 @@ Add display of all thumbnails to the bottom or right of the active large image, 
 By clicking the arrows, in addition to changing the active image, you can manage the change of the active thumbnail.
 Before you start coding:
 Let us not be intimidated by the apparent complexity of the exercise, but let us analyze first, as we always have, what could await us. We completed the HTML and CSS session a few days ago, if we don't remember something, let's go over some topics. However, let's not dedicate more than half an hour to the review, so as not to lose sight of the focus of the exercise.
+
+# Procedure
+
+1. recupero prev e next
+2. creo una larray con le immagini
+3. preparo la gestione dell'index
+4. impostiamo la prima immagine come immagine di partenza
+5. metto in ascolto il next
+6. metto in ascolto il previous
