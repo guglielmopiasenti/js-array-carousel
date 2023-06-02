@@ -33,34 +33,40 @@ const images = document.querySelectorAll('#carousel img');
 // setting up the first image as active 
 images[currentIndex].classList.add('active');
 console.log (images);
+
+
 // ! Reasoning logic
 
-// i set next to listen
+// Set next button to listen
 nextButton.addEventListener('click', function() {
-    // if at last image i stop the function
-    if (currentIndex ===  images.lenght - 1) return;
-    
-    // I remove the active class from the image that corresponds to currentIndex
+    // Remove the active class from the current image
     images[currentIndex].classList.remove('active');
 
-    // incrementing the current index
+    // Increment the current index
     currentIndex++;
 
-    // I add the class active to the corresponding newIndex image
+    // If the current index exceeds the last index, set it to 0 to wrap around
+    if (currentIndex >= images.length) {
+        currentIndex = 0;
+    }
+
+    // Add the active class to the new currentIndex image
     images[currentIndex].classList.add('active');
 });
 
-// setting prev to listen
-prevButton.addEventListener('click', function(){    
-    // if at last image i block the function
-    if (!currentIndex) return;
-
-    // I remove the active class from the corresponding currentIndex image
+// Set prev button to listen
+prevButton.addEventListener('click', function() {
+    // Remove the active class from the current image
     images[currentIndex].classList.remove('active');
 
-    // decrementig current index
+    // Decrement the current index
     currentIndex--;
 
-    // I add the active class to the corresponding currentIndex image
+    // If the current index is less than 0, set it to the last index to wrap around
+    if (currentIndex < 0) {
+        currentIndex = images.length - 1;
+    }
+
+    // Add the active class to the new currentIndex image
     images[currentIndex].classList.add('active');
 });

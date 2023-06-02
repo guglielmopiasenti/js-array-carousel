@@ -32,13 +32,15 @@
 }
 #carousel .bi {
     position: absolute;
-    translate: -50%;
+    transform: translate(-50%, -50%);
     font-size: 2rem;
     cursor: pointer;
 }
 #prev {
-    right: 105%;
+    right: 100%;
+    top:150px;
 }
 #next {
     left: 105%;
+    top:150px;
 }
