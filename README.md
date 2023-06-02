@@ -26,8 +26,6 @@ Add the carousel infinite loop. That is, if the first image is active and the us
 
 Add display of all thumbnails to the bottom or right of the active large image, (use the attached screenshot for inspiration). All thumbnails will have a dark opacity layer, except for the one corresponding to the active image, which will instead have a colored border.
 By clicking the arrows, in addition to changing the active image, you can manage the change of the active thumbnail.
-Before you start coding:
-Let us not be intimidated by the apparent complexity of the exercise, but let us analyze first, as we always have, what could await us. We completed the HTML and CSS session a few days ago, if we don't remember something, let's go over some topics. However, let's not dedicate more than half an hour to the review, so as not to lose sight of the focus of the exercise.
 
 # Procedure
 
