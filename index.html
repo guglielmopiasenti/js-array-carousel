@@ -13,7 +13,6 @@
 </head>
 <body>
     
-    <!-- Carousel -->
     <header>
         <nav class="navbar">
             <div class="container justify-content-start">
@@ -38,15 +37,47 @@
             </div>
         </nav>
     </header>
-
-
+    
+    
     <main>
         <section id="jumbotron">
             <div class="container">
-               <h2></h2> 
+                <nav id="jumbo-nav" class="navbar navbar-expand-lg my-5>
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"><i class="bi bi-steam"></i></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-white" aria-current="page" href="#">Il tuo Negozio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Novita' e tendenze</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white">Negozio dei punti</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white">Notizie</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white">Laboratori</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Cerca">
+                                <button class="btn btn-primary" type="submit"><i class="bi bi-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </section>
-
+        
+        <!-- Carousel -->
         <div class="container py-5">
             <h1 class="text-white text-center">Giochi in evidenza disponibili ora</h1>
             <div id="carousel" class="shadow">
@@ -58,19 +89,23 @@
     
     
     
-            <!-- Banner (took from Steam official page) -->
-            <div class="banner d-flex justify-content-center">
-                <a href="https://store.steampowered.com/app/1675200/Steam_Deck/?utm_source=steamhome&amp;snr=1_4_4__147"
-                    class="hardware_steamdeck_banner ds_no_flags" data-ds-appid="1675200" data-ds-itemkey="App_1675200"
-                    data-ds-crtrids="[4]"
-                    onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:1675200,&quot;public&quot;:1,&quot;v6&quot;:1} );"
-                    onmouseout="HideGameHover( this, event, 'global_hover' )">
-                    <img class="steamdeck_banner_desktop"
-                        src="https://cdn.akamai.steamstatic.com/steam/clusters/sale_autumn2019_assets/54b5034d397baccb93181cc6/deck_banner_desktop_italian.gif?t=1684346213"
-                        alt="Steam Deck">
-                </a>
-                <img src="https://cdn.akamai.steamstatic.com/store/home/store_index_promo.jpg" alt="Valve Index">
-            </div>
+            <!-- !Banner (took from Steam official page) -->
+            <section id="banner">
+
+                <h2 class="banner-title text-center text-white"> Acquista uno dei nostri prodotti</h2>
+                <div class="banner d-flex justify-content-center">
+                    <a href="https://store.steampowered.com/app/1675200/Steam_Deck/?utm_source=steamhome&amp;snr=1_4_4__147"
+                        class="hardware_steamdeck_banner ds_no_flags" data-ds-appid="1675200" data-ds-itemkey="App_1675200"
+                        data-ds-crtrids="[4]"
+                        onmouseover="GameHover( this, event, 'global_hover', {&quot;type&quot;:&quot;app&quot;,&quot;id&quot;:1675200,&quot;public&quot;:1,&quot;v6&quot;:1} );"
+                        onmouseout="HideGameHover( this, event, 'global_hover' )">
+                        <img class="steamdeck_banner_desktop"
+                            src="https://cdn.akamai.steamstatic.com/steam/clusters/sale_autumn2019_assets/54b5034d397baccb93181cc6/deck_banner_desktop_italian.gif?t=1684346213"
+                            alt="Steam Deck">
+                    </a>
+                    <img src="https://cdn.akamai.steamstatic.com/store/home/store_index_promo.jpg" alt="Valve Index">
+                </div>
+            </section>
         </div>
     </main>
 
